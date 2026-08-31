@@ -14,7 +14,10 @@ public class MenuAbb {
             System.out.println("MENU DE ESCOLHA\n" +
                                 "0  - Sair do programa\n" +
                                 "1  - Insere 1 valor na ABB\n" +
-                                "2  - Apresenta em ordem os elementos da ABB\n");
+                                "2  - Apresenta em ordem os elementos da ABB\n" +
+                                "3  - Conta quantidade de nós presentes na ABB\n" +
+                                "4  - Consulta se um valor está presente na ABB\n" +
+                                "5  - Apresente o número de comparações para pesquisar um valor na ABB");
             System.out.println("Opção: ");
             opcao = le.nextInt();
 
@@ -34,6 +37,10 @@ public class MenuAbb {
                     System.out.println("Apresentando em ordem os valores da ABB:");
                     abb.mostrarEmOrdem(abb.root);
                     System.out.println();
+                    break;
+
+                case 3:
+                    System.out.println("Quantidade de nós: " + abb.contaNos(abb.root, 0));
                     break;
 
                 default:
